@@ -8,8 +8,11 @@ set keywordprg=~/bin/ydict
 set complete-=k complete+=k
 
 " 設定 vim 編輯預設備份目錄, 必須先 mkdir ~/vi_backup/
-set backupdir=~/vi_backup/
+set backupdir=~/.bak/
 set backup
+
+" 按F3切換paste mode
+set pastetoggle=<F3>
 
 " set php pear path
 set path+=/usr/share/php
@@ -54,7 +57,7 @@ set runtimepath=~/.vim,$VIMRUNTIME
 set history=50
 
 filetype on
-set number
+"set number
 set cindent
 "set autoindent
 "set smartindent
@@ -68,6 +71,7 @@ set tabstop=4
 " :sp 開檔時, 上面會列出所有檔案
 set wildmenu
 
+set nofoldenable
 " 可以用 {{{ }}} 縮排 Folded
 set foldmethod=marker
 

@@ -5,8 +5,8 @@
     log = auto
     ui = auto
 [user]
-    name = Tsung-Hao Lee
-    email = tsunghao@gmail.com
+    name = chrisjan
+    email = chrisjan@gmail.com
 [alias]
     br = branch
     ci = commit

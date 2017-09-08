@@ -19,7 +19,7 @@ if [ "$PS1" ]; then
 
     # enable color support of ls and also add handy aliases
     eval `dircolors -b`
-    alias ls='ls --color=auto'
+    alias ls='ls -a --color=auto'
     #alias dir='ls --color=auto --format=vertical'
     #alias vdir='ls --color=auto --format=long'
 
@@ -72,8 +72,10 @@ set nobeep
 #xset b off
 
 export PATH=$HOME/bin:$PATH
-export LANG=zh_TW.UTF-8
-export LC_ALL=zh_TW.UTF-8
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+#export LANG=zh_TW.UTF-8
+#export LC_ALL=zh_TW.UTF-8
 export EDITOR=vim
 
 # 設 less
