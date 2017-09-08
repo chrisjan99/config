@@ -94,8 +94,8 @@ syntax on
 "colorscheme default
 "colorscheme desert
 colorscheme darkblue
-"hi Comment ctermbg=black ctermfg=darkcyan
-hi Comment term=standout cterm=bold ctermfg=0
+hi Comment ctermbg=black ctermfg=darkcyan
+"hi Comment term=standout cterm=bold ctermfg=0
 hi Search term=reverse ctermbg=3 ctermfg=0
 hi Folded ctermbg=black ctermfg=darkcyan
 hi Cursor ctermbg=Gray ctermfg=Blue
