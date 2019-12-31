@@ -29,12 +29,12 @@ if [[ $FOUND_PYENV -eq 1 ]]; then
         eval "$(pyenv virtualenv-init - zsh)"
     fi
     function pyenv_prompt_info() {
-        echo "$ZSH_THEME_PYENV_PREFIX$(pyenv version-name)$ZSH_THEME_PYENV_SUFFIX"
+        echo "${ZSH_THEME_PYENV_PREFIX}pyenv: $(pyenv version-name)$ZSH_THEME_PYENV_SUFFIX"
     }
 else
     # fallback to system python
     function pyenv_prompt_info() {
-        echo "system: $(python -V 2>&1 | cut -f 2 -d ' ')"
+        echo "${ZSH_THEME_PYENV_PREFIX}sys: $(python -V 2>&1 | cut -f 2 -d ' ')$ZSH_THEME_PYENV_SUFFIX"
     }
 fi
 
